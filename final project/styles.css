@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #083000;
+    color: #b8b819;
+    padding: 1em;
+    text-align: center;
+}
+
+/* nav {
+    margin-top: 1em;
+} */
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #b8b826;
+    margin: 0 1em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+main {
+    padding: 1rem 0.5rem 3rem 0.5rem;
+    margin: auto;
+}
+
+main img {
+    /* width: 50%; */
+    height: auto;
+    border: 2px solid #083000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+footer {
+    background-color: #0d2f06;
+    color: #fff;
+    text-align: center;
+    padding: 0.4rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8em;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem;
+}
+
+.card img {
+    width: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+.odd {
+    flex-direction: row-reverse;
+}
+
+.columns {
+    column-count: 1;
+}
+
+@media (min-width: 800px) {
+    main {
+        padding: 1rem 5rem 3rem 5rem;
+    }
+
+    .card {
+        flex-wrap: nowrap;
+    }
+
+    .card img {
+        width: 250px;
+    }
+
+    .columns {
+        column-count: 2;
+        column-gap: 4rem;
+    }
+}
+
+
+.tournament-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+.tournament-table th,
+.tournament-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.tournament-table th {
+    background-color: #083000;
+    color: #b8b819;
+}
+
+.tournament-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea,
+        button {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button[type="submit"] {
+            background-color: #c8b919;
+            color: #083000;
+            cursor: pointer;
+            border: transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Form Page</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="brands.html">Brands</a></li>
+                <li><a href="women-players.html">Women Players</a></li>
+                <li><a href="men-players.html">Men Players</a></li>
+                <li><a href="tournaments.html">Main Tournaments</a></li>
+                <li><a href="form-page.html">Contact Page</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="center">Contact Us</h2>
+
+        <form action="submit-form.php" method="post">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; History of Tennis. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
